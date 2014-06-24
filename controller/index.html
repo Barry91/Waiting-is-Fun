@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Acceleration Example</title>
+    <script type="text/javascript" charset="utf-8" src="lib/jquery.js"></script>
+    <script type="text/javascript" charset="utf-8" src="lib/gyro.js"></script>
+    <script type="text/javascript" charset="utf-8" src="main.js"></script>
+	<title>Acceleration Example</title>
+	<script src="http://172.20.10.3:8080/socket.io/socket.io.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+	<script>
+		var socket = io.connect('http://172.20.10.3:8080');
+	</script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,100' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="style.css">
+	
+  </head>
+  <body>
+    	<h3>Accelerometer Jump</h3>
+		<div class="ballcolor"></div>
+  </body>
+</html>

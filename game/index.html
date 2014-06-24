@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Waiting is Fun</title>
+	<script src="http://172.20.10.3:8080/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<meta name="apple-mobile-web-app-capable" content="yes" /> 
+	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <script src="static/js/lib.js"></script>
+    <script src="static/js/fps.js"></script>
+    <script src="static/js/app.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,100' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="static/css/style.css">
+	<script>
+		var socket = io.connect('http://172.20.10.3:8080');
+	</script>
+  </head>
+  <body>
+	<div class="wrapper">
+		<h3>Bus 54 <span id="timer"></span></h3>
+		<canvas id="myCanvas" width="800" height="535"></canvas>
+		<div class="counter"></div>
+		<div class="streak"></div>
+		<div class="achievement a1">2x</div>
+		<div class="achievement a2">4x</div>
+		<div class="achievement a3">8x</div>
+		<div class="multi a1">2x</div>
+		<div class="multi a2">4x</div>
+		<div class="multi a3">8x</div>
+		<div id="debug"></div>
+	</div>
+  </body>
+</html>
